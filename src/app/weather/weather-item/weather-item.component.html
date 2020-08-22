@@ -1,0 +1,19 @@
+<div class="weather-item">
+  <div (click)="onClick()">
+    <div *ngIf="error">
+      <p>{{this.error}}</p>
+    </div>
+    <div *ngIf="!error">
+      <span class="heading-text">{{ weather.city }}</span>
+      <div class="weather-icon-container">
+        <img style="position:absolute; min-width: 100px; min-height: 100px" src="{{weather.icon}}">
+      </div>
+      <span class="temperature-text">{{ weather.temperature }}°F</span>
+      <span class="weather-condition-text">{{ weather.description }}</span>
+      <span class="weather-humidity-text">humidity {{ weather.humidity }}%</span>
+    </div>
+  </div>
+  <div class="delete-icon-container" *ngIf="!error">
+    <button class="btn btn-outline-danger" (click)="onDelete()"><i class="fa fa-close"></i></button>
+  </div>
+</div>

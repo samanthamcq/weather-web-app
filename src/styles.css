@@ -1,0 +1,156 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  color: #000000;
+  background: #9198e5;
+}
+
+* {
+  font-family: Arial;
+}
+
+.weather-list-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  position: relative;
+}
+
+.weather-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  box-shadow: 0 0 2rem rgba(0, 0, 255, 0.1);
+  justify-items: center;
+  padding: 2rem;
+  margin: 2rem;
+  width: 19rem;
+  height: 30rem;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 1.75rem;
+}
+
+.weather-icon-container {
+  position: relative;
+  width: 10rem;
+  min-height: 6.25rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.heading-text {
+  display: block;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.temperature-text {
+  align-self: end;
+  width: 100%;
+  min-height:4.3rem;
+  font-size: 4rem;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.weather-condition-text {
+  display: block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.weather-humidity-text {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.form-registration-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.form-content {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  width: 90%;
+  max-width: 450px;
+  height: 350px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+  position: relative;
+}
+
+.form-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-top: 1px solid #dce8f1;
+  padding: 25px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.heading-container {
+  padding: 20px 0 20px 0;
+}
+
+.loading-container {
+  padding: 20px 0 20px 0;
+}
+
+.form-input {
+  position: relative;
+  box-sizing: border-box;
+  width: 70%;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-registration-wrapper input.ng-invalid.ng-touched {
+  border: 2px solid red;
+}
+
+.form-input:focus {
+  z-index: 2;
+}
+
+.first-item {
+  margin-bottom: -1px;
+  border-radius: 10px 10px 0 0;
+}
+
+.middle-item {
+  margin-bottom: -1px;
+  border-radius: 0 0 0 0;
+}
+
+.last-item {
+  margin-bottom: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.form-registration-background {
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/images/sky.jpg");
+}

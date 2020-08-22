@@ -1,0 +1,114 @@
+.body-content-container {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.temp-state-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.city-name-text {
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.date-name-text {
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.detail-icon-container {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.temperature-text {
+  font-size: 6rem;
+  letter-spacing: 0.75rem;
+  text-align: center;
+}
+
+.weather-state-text {
+  letter-spacing: 0.5rem;
+  font-size: 1.15rem;
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
+.footer-content-container {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.daily-container {
+  display: flex;
+  flex-flow: column;
+  margin: 1.5rem 1rem;
+  justify-content: center;
+}
+
+.day-name-text {
+  font-size: 1.2rem;
+  color: #39437a;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+.day-icon {
+  height: 4rem;
+}
+
+.day-temp-text {
+  font-size: 1.5rem;
+  color: #0c1066;
+  letter-spacing: 0.25rem;
+  margin: 0 0;
+  text-align: center;
+  padding-left: 0.35rem;
+}
+
+.day-description-text {
+  font-size: 0.65rem;
+  letter-spacing: 0.2rem;
+  color: #2B244D;
+  text-align: center;
+}
+
+.detail-container {
+  display: flex;
+  flex-flow: row;
+  justify-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.home-icon-container {
+  margin: 0;
+  padding: 0;
+}
+
+.add-icon-container {
+  margin: 0;
+  padding: 0;
+}
+
+

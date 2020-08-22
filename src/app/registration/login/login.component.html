@@ -1,0 +1,33 @@
+<div class="form-registration-background">
+  <div class="form-registration-wrapper">
+    <div class="form-content">
+      <div class="heading-container">
+        <span class="heading-text">Weather App</span>
+      </div>
+
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+        <input class="form-input first-item" type="email" id="email" formControlName="email" placeholder="Email address"
+          autofocus />
+        <input class="form-input last-item" type="password" id="password" formControlName="password"
+          placeholder="Password" />
+
+        <div>
+          <button class="btn btn-primary" type="submit" [disabled]="!loginForm.valid">
+            Sign in
+          </button>
+          <span class="fa fa-spinner fa-spin fa-2x fa-fw spin-color" *ngIf="loading"></span>
+        </div>
+
+        <div class="error-container" *ngIf="error" style="color:red">
+          <span>{{error}}</span>
+        </div>
+
+      </form>
+
+      <div class="form-footer">
+        <a routerLink="/signup">Don't have an account? Signup!</a>
+      </div>
+    </div>
+  </div>
+</div>

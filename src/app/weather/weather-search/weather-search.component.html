@@ -1,0 +1,35 @@
+<div class="weather-search-container" >
+  <div *ngIf="error">
+    <div class="weather-item">
+      <span class="heading-text">{{ weather.city }}</span>
+      <span class="weather-humidity-text">{{ error }}</span>
+      <a [routerLink]="['/home']" class="nav-link">
+        <i class="fa fa-home" aria-hidden="true"></i>
+          Home
+      </a>
+    </div>
+  </div>
+
+  <div *ngIf="!error">
+    <div class="weather-item">
+      <div (click)="onClick()">
+        <span class="heading-text">{{ weather.city }}</span>
+        <div class="weather-icon-container">
+          <img src="{{ weather.icon }}">
+        </div>
+        <span class="temperature-text">{{ weather.temperature }}°F</span>
+        <span class="weather-condition-text">{{ weather.description }}</span>
+        <span class="weather-humidity-text">humidity {{ weather.humidity }}%</span>
+      </div>
+      <div class="add-city-icon-container" *ngIf="newCity">
+          <button class="btn btn-outline-primary" (click)="addCity()">Add City</button>
+      </div>
+      <div class="add-city-icon-container" *ngIf="!newCity">
+        <a [routerLink]="['/home']" class="nav-link">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          Home
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

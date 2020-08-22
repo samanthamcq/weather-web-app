@@ -1,0 +1,33 @@
+<div class="detail-container">
+  <div class="home-icon-container">
+    <button class="btn btn-outline-primary" (click)="goHome()"><i class="fa fa-home"></i>Home</button>
+  </div>
+  <div class="">
+    <div class="body-content-container">
+      <div class="temp-state-container">
+        <span class="city-name-text">{{weather.city}}</span>
+        <span class="date-name-text">{{currentDate | date:'medium'}}</span>
+        <div class="detail-icon-container">
+          <img src="{{weather.icon}}">
+        </div>
+        <span class="weather-state-text">{{weather.description}}</span>
+        <span class="weather-humidity-text">humidity {{ weather.humidity }}%</span>
+        <span class="temperature-text">{{weather.temperature}}°F</span>
+      </div>
+    </div>
+
+    <div class="footer-content-container">
+      <div class="daily-container" *ngFor="let item of weathers">
+        <span class="day-name-text">{{item.day}}</span>
+        <img class="day-icon" src="{{item.icon}}">
+        <span class="day-description-text">{{ item.description }}</span>
+        <span class="day-temp-text">{{ item.minTemp }}°F</span>
+        <span class="day-temp-text">{{ item.maxTemp }}°F</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="add-icon-container">
+    <button class="btn btn-outline-primary" (click)="addCity()" [disabled]="!newCity"><i class="fa fa-plus"></i>Add City</button>
+  </div>
+</div>

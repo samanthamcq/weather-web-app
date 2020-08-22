@@ -1,0 +1,19 @@
+.section-header {
+  margin: 0px;
+  width: 100%;
+  background-color: white;
+  padding: 20px 0px 20px 0px;
+}
+
+.search-box {
+  margin: 0px;
+  padding: 0px 20px 0px 0px;
+  float: right;
+}
+
+.welcome-text {
+  font-size: 1.25rem;
+  text-align: left;
+  margin: 0px;
+  padding: 0px 0px 0px 30px;
+}

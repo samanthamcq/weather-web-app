@@ -1,0 +1,16 @@
+<div class="weather-add-item">
+  <div>
+    <span class="heading-text">Add City</span>
+  </div>
+  <div>
+    <div class="input-group">
+      <input #city type="text" class="form-control" placeholder="Search for city, zip"
+        (keyup.enter)="onSearch(city.value); city.value='' ">
+      <div class="input-group-append">
+        <button class="btn btn-secondary" (click)="onSearch(city.value); city.value='' ">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="row section-header">
+  <span class="col welcome-text">Welcome {{name}}</span>
+
+  <div class="col">
+    <div class="search-box">
+      <div class="input-group">
+        <input #city class="form-control" type="text" placeholder="Search for city, zip"
+          (keyup.enter)="onSearch(city.value); city.value='' ">
+        <div class="input-group-append">
+          <button class="btn btn-secondary" (click)="onSearch(city.value); city.value='' ">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<router-outlet></router-outlet>

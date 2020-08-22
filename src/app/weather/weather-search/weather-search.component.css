@@ -1,0 +1,11 @@
+.weather-search-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+.add-city-icon-container {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+}

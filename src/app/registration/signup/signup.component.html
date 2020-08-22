@@ -1,0 +1,28 @@
+<div class="form-registration-background">
+  <div class="form-registration-wrapper">
+    <div class="form-content">
+      <div class="heading-container">
+        <span class="heading-text">Sign Up</span>
+      </div>
+
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <input class="form-input first-item" type="text" id="fullName" formControlName="fullName" placeholder="Name"
+          autofocus />
+        <input class="form-input middle-item" type="email" id="email" formControlName="email" placeholder="email" />
+        <input class="form-input last-item" type="password" id="password" formControlName="password"
+          placeholder="Password" />
+
+        <div class="create-button-container">
+          <button type="submit" [disabled]="!signupForm.valid" class="btn btn-primary">
+            Sign Up
+          </button>
+          <span class="fa fa-spinner fa-spin fa-2x fa-fw spin-color" *ngIf="loading"></span>
+        </div>
+
+        <div class="error-container" *ngIf="error" style="color:red">
+          <span>{{error}}</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
